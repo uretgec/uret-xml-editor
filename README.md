@@ -1,8 +1,9 @@
 URET XML EDITOR
 =============
 
-URET XML Editor for generate custom xml files with own configration datas. Build your own xml files and configs. There is only one class and thats it.
-Uret XML EDITOR = XMl Config Creator + XML File Creator  
+URET XML Editor for generate custom xml files with own configration datas. Build your own xml files and configs. There is only one class and thats it. Nodatabase requirement. I used jquery and jquery ui in this project.
+
+Uret XML EDITOR = XML Config Creator + XML File Creator  
 
 Configration
 -------
