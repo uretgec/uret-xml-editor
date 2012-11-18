@@ -5,8 +5,8 @@ URET XML Editor for generate custom xml files with own configration datas. Build
 
 Uret XML EDITOR = XML Config Creator + XML File Creator  
 
-* Create custom xml files
-* Edit custom xml files
+* Create custom xml files (config item sortable and dragable)
+* Edit custom xml files (item sortable and dragable)
 * Backup this files (if you want)
 
 Configration
@@ -22,7 +22,7 @@ Usage
 Include uret_xml class top of the page.
 	
 	include "class_uretxml.php";
-	$read_xml = new XML_Creator; 
+	$read_xml = new URET_XML_Creator; 
 
 Init functions
 -----
