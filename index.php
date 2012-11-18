@@ -1,7 +1,7 @@
 <?php 
 // Main File - All of action in it.
 include "class_uretxml.php";
-$read_xml = new XML_Creator; 
+$read_xml = new URET_XML_Creator; 
 if(isset($_POST['action']) && $_POST['action'] === 'config'){
 	$result = $read_xml->create_first_xml($_POST['file_name'],$_POST);
 } elseif(isset($_POST['action']) && $_POST['action'] === 'create') {

@@ -2,7 +2,7 @@
 // Demo Config XML File Creator
 include "class_uretxml.php";
 if($_POST){
-$read_xml = new XML_Creator; 
+$read_xml = new URET_XML_Creator; 
 echo $read_xml->create_first_xml($_POST['file_name'],$_POST);
 }
 ?>
