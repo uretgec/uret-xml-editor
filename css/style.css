@@ -53,10 +53,12 @@ pre{
 	font-size: 13px;
 	color:#4183C4;
 }
+ul li span.item_id{position: absolute; font-size:50px; line-height: 60px; color:#eee;top:40px;right:15px;}
 /*Main page style*/
 #mainpage,
 #xml_config,
-#xml_creator {
+#xml_creator,
+#xml_special {
   display: block;
   overflow: hidden;
   padding: 3px;
@@ -68,7 +70,8 @@ pre{
 }
 #mainpage h2,
 #xml_config h2,
-#xml_creator h2 {
+#xml_creator h2,
+#xml_special h2 {
   display: block;
   position: relative;
   padding: 10px 0;  
@@ -78,7 +81,8 @@ pre{
 }
 #mainpage h2,
 #xml_config h2,
-#xml_creator h2 {
+#xml_creator h2,
+#xml_special h2 {
   margin: 0px;
   color: #333;
   text-shadow: 1px 1px 0px white;
@@ -97,7 +101,8 @@ pre{
 }
 #mainpage h2 span,
 #xml_config h2 span,
-#xml_creator h2 span {
+#xml_creator h2 span,
+#xml_special h2 span {
 display: block;
 position: absolute;
 top: 0px;
@@ -153,17 +158,20 @@ filter: progid:DXImageTransform.Microsoft.gradient(startColorStr='#eaeaea', EndC
   border: solid #cacaca;
   border-width: 0px 1px 1px 0px;
   padding: 10px 5px;
+  position: relative;
 }
 #mainpage a,
 #mainpage input[type="submit"],
 #xml_config a,
-#xml_creator a{
+#xml_creator a,
+#xml_special a{
   padding: 3px 7px;
 }
 #mainpage a,
 #mainpage input[type="submit"],
 #xml_config a,
-#xml_creator a{
+#xml_creator a,
+#xml_special a{
 cursor: pointer;
 text-shadow: 1px 1px 0 white;
 -webkit-border-radius: 3px;
@@ -189,7 +197,8 @@ display: inline-block;
 #mainpage a:hover, 
 #mainpage input[type=submit]:hover,
 #xml_config a:hover,
-#xml_creator a:hover {
+#xml_creator a:hover,
+#xml_special a:hover {
 text-shadow: -1px -1px 0 rgba(0, 0, 0, 0.3);
 border-color: #518CC6;
 background-color: #599BDC;
@@ -204,10 +213,22 @@ filter: progid:DXImageTransform.Microsoft.gradient(startColorStr='#599bdc', EndC
 color: white;
 }
 
+p#show_hide{clear: both; position: relative; padding: 10px; border-bottom:1px solid #ccc;  background: #f8f8f8;}
+#xml_creator a#show{
+  right: 10px;
+  top:5px;
+  position: absolute;
+}
+#xml_creator p.ui-state-highlight{
+  background-color: #4183C4; 
+  height: 40px;
+}
 
 /*xml-config and xml-creator page*/
+#xml_creator ul#creator li{display: none;}
 #xml_config input[type="submit"],
-#xml_creator input[type="submit"]{
+#xml_creator input[type="submit"],
+#xml_special input[type="submit"]{
 	position: relative;
 float: left;
 cursor: pointer;
@@ -236,7 +257,8 @@ color: white;
 display: inline-block;
 }
 #xml_config input[type="submit"]:hover,
-#xml_creator input[type="submit"]:hover{
+#xml_creator input[type="submit"]:hover,
+#xml_special input[type="submit"]:hover{
 	border: 1px solid #468F3B;
 background-color: #32AB22;
 background-image: -moz-linear-gradient(top, #32AB22, #257D19);
@@ -256,14 +278,15 @@ filter: progid:DXImageTransform.Microsoft.gradient(startColorStr='#32ab22', EndC
 #xml_config ul#config li p,
 #xml_creator ul#creator li p{
 	margin-top: 5px;
-	padding: 0 10px;
+	padding: 0 10px 5px 10px;
+  border-bottom: 1px solid #EEE;
 }
 #xml_config ul#config li p label,
 #xml_creator ul#creator li p label{
 	float: left; 
 	width: 150px;
 	text-align: right;
-	margin-top: 3px;
+	margin-top: 7px;
 	margin-right: 10px;
 }
 #xml_config ul#config li p span.desc,
@@ -279,11 +302,13 @@ filter: progid:DXImageTransform.Microsoft.gradient(startColorStr='#32ab22', EndC
 #xml_creator input[type="text"],
 #xml_config p.filename input[type="text"]{
 	width: 400px;
-	padding: 0 5px;
+	padding: 5px;
+  border: 1px solid #999;
 }
 #xml_config textarea,
 #xml_creator textarea{
 	width: 400px;
 	height: 100px;
-	padding: 0 5px;
+	padding: 5px;
+  border: 1px solid #999;
 }
