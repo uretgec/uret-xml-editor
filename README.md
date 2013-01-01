@@ -5,6 +5,9 @@ URET XML Editor for generate custom xml files with own configration datas. Build
 
 Uret XML EDITOR = XML Config Creator + XML File Creator  
 
+![Sample dashboard](https://github.com/uretgec/uret-xml-editor/raw/master/screenshot.png)
+![Edit XML](https://github.com/uretgec/uret-xml-editor/raw/master/screenshot1.png)
+
 * Create custom xml files (config item sortable and dragable)
 * Edit custom xml files (item sortable and dragable)
 * Backup this files (if you want)
