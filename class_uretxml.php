@@ -5,7 +5,7 @@
  * @author      Tuna Aras <iletisim@uretgec.com>
  * @copyright   2012 Tuna Aras
  * @link        http://www.uretgec.com
- * @version     1.0
+ * @version     1.1
  *
  * MIT LICENSE
  *
@@ -213,8 +213,7 @@ class URET_XML_Creator {
         $i = 0;
         foreach ($var as $value) {
             $show_title = (isset($value['title'])) ? $value['title'] : 'No Description';
-            $field .= '<p id="show_hide"><span>'.$show_title.'</span><a href="li#u'.$i.'" id="show">Show</a></p>';
-            $field .= '<li class="create" id="u'.$i.'"><span class="item_id">'.$i.'</span>';
+            $field .= '<li class="create" id="u'.$i.'"><div id="show_hide"><span>'.$show_title.'</span><a href="#" id="show">Show</a></div><div class="show_me_pls"><span class="item_id">'.$i.'</span>';
             foreach ($value as $key => $val) {
                 $title = $config_data[$key]['title'];
                 $name = $config_data[$key]['name'];
@@ -273,7 +272,7 @@ class URET_XML_Creator {
                 }
                 $field .= '</p>';
             }
-            $field .= '<a href="#" id="delete">Delete</a></li>';
+            $field .= '<a href="#" id="delete">Delete</a></div></li>';
             $i++;
         }
         return $field;
