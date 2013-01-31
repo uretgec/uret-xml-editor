@@ -47,6 +47,11 @@ MIT Open Source License
 -----
 The Uret XML Editor is released under the MIT public license.
 
+New:
+-------
+Toggle Menu added.
+Change js function
+
 Coming Soon:
 -------
 * Edit config file
