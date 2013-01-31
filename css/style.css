@@ -213,7 +213,8 @@ filter: progid:DXImageTransform.Microsoft.gradient(startColorStr='#599bdc', EndC
 color: white;
 }
 
-p#show_hide{clear: both; position: relative; padding: 10px; border-bottom:1px solid #ccc;  background: #f8f8f8;}
+#show_hide{clear: both; position: relative; padding: 10px;}
+.show_me_pls{position: relative;}
 #xml_creator a#show{
   right: 10px;
   top:5px;
@@ -225,7 +226,7 @@ p#show_hide{clear: both; position: relative; padding: 10px; border-bottom:1px so
 }
 
 /*xml-config and xml-creator page*/
-#xml_creator ul#creator li{display: none;}
+#xml_creator ul#creator li .show_me_pls{display: none;}
 #xml_config input[type="submit"],
 #xml_creator input[type="submit"],
 #xml_special input[type="submit"]{
