@@ -21,7 +21,7 @@ $(document).ready(function(){
 		return false;
 	});
 	udelete.on('click',function(){
-		$(this).parent().remove();
+		$(this).parents('li').remove();
 		return false;
 	});
 	add_new.on('click',function(){
@@ -41,9 +41,9 @@ $(document).ready(function(){
         }
     });
     ushow.on('click',function(){
-		var find_item = $(this).attr("href");		
-		var toggle_switch = $(this);
-		$(find_item).toggle(function(){
+		var find_item = $(this).parents("li").attr("id");
+		var toggle_switch = $("li#"+find_item+" #show_hide a");
+		$("li#"+find_item+" .show_me_pls").toggle(function(){
 		  if($(this).css('display')=='none'){
 			toggle_switch.html('Show');
 		  }else{
@@ -53,5 +53,4 @@ $(document).ready(function(){
 		return false;
 	});
     $("#config,#creator").sortable({ axis: "y",cursor: "move",placeholder: "ui-state-highlight",revert: false,items: "> li",connectWith: "p#show_hide" });
-    $("#config,#creator").sortable({ axis: "y",cursor: "move",placeholder: "ui-state-highlight",revert: false,items: "p#show_hide",connectWith: "> li" });
 });
